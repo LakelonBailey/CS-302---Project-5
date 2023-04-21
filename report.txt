@@ -1,0 +1,13 @@
+Summary of Contributions:
+- I, Lakelon Bailey, worked alone on this, so I am the only contributor
+
+Time Complexity:
+- O(W * V * E^2), where W is the number of words to check, V is the number of vertices in the graph (2N + 2, where N is the number of dice), and E is the number of edges in the graph.
+
+Data Structures Used:
+- Adjacency list (adj): A vector of vectors of integers, representing the graph. Each element adj[i] is a vector containing the neighbors of node i. This data structure allows for efficient traversal of the graph's edges and nodes.
+- Residual capacities (res): A 2D array of integers representing the residual capacities of the edges. res[u][v] stores the residual capacity of the edge from node u to node v. This data structure allows for quick look-up and modification of the residual capacities during the algorithm's execution.
+- Parent array (parent): An array of integers used to store the parent of each node during the BFS traversal in the Edmonds-Karp algorithm. This data structure is used to reconstruct the augmenting paths after finding them in the BFS.
+
+GitHub Repo Link:
+- https://github.com/LakelonBailey/CS-302---Project-5

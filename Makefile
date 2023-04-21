@@ -3,10 +3,11 @@ CXXFLAGS=	-g -Wall -std=gnu++11
 SHELL=		bash
 PROGRAMS=	worddice
 
-all:		worddice
+all:            worddice
 
-worddice:	worddice.cpp
+worddice: worddice.cpp
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
 clean:
 	rm -f $(PROGRAMS)
+
